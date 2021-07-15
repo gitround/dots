@@ -3,6 +3,8 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+export ALIAS_DIR="$HOME/dotfiles-local/aliases.local"
+
 # extra files in ~/.zsh/configs/pre , ~/.zsh/configs , and ~/.zsh/configs/post
 # these are loaded first, second, and third, respectively.
 _load_settings() {
@@ -39,3 +41,5 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+source ~/dotfiles-local/aliases.local
